@@ -1,0 +1,24 @@
+@import './bootstrap_custom.scss';
+
+.field_with_errors{
+    color: red;
+}
+#error_explanation{
+  border: solid 1px red;
+  background-color: lightcoral;
+  padding:10px;
+  color: white;
+}
+#error_explanation h2{
+  font-size:0.9em;
+}
+
+.toast{
+  z-index:3000;
+}
+.alert-messages{
+	z-index:2000;
+    position:absolute;
+    width:100%;
+    top:0px
+}

@@ -1,0 +1,175 @@
+  [1m[35m (487.5ms)[0m  [1m[35mCREATE DATABASE "f1_game_season_tracker_development" ENCODING = 'unicode'[0m
+  [1m[35m (111.2ms)[0m  [1m[35mCREATE DATABASE "f1_game_season_tracker_test" ENCODING = 'unicode'[0m
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE DATABASE "f1_game_season_tracker_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "f1_game_season_tracker_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:22:58 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 399)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 68fbd3dca3a65a587109
+Version: webpack 4.46.0
+Time: 11436ms
+Built at: 10/25/2021 9:23:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b7d03aecd93668922aed.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-b7d03aecd93668922aed.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b7d03aecd93668922aed.js js/application-b7d03aecd93668922aed.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 674 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 745 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 7 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.esm.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/tomshaw/projects-ruby/f1-game-season-tracker/node_modules/bootstrap/dist/js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.esm.js 60:0-41 2356:17-23 2375:21-40 4029:15-21 4164:23-42
+ @ ./app/javascript/packs/application.js
+
+  Rendered layouts/_topnav.html.erb (Duration: 2.0ms | Allocations: 256)
+  Rendered layouts/_messages.html.erb (Duration: 1.7ms | Allocations: 316)
+  Rendered layout layouts/application.html.erb (Duration: 17967.6ms | Allocations: 4691)
+Completed 200 OK in 18088ms (Views: 18043.2ms | ActiveRecord: 0.0ms | Allocations: 9062)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:24:21 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_topnav.html.erb (Duration: 0.4ms | Allocations: 256)
+  Rendered layouts/_messages.html.erb (Duration: 0.9ms | Allocations: 316)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3869)
+Completed 200 OK in 42ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 6762)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:24:26 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_topnav.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 2665)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 3076)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:33:41 +0100
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_topnav.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 60)
+  Rendered layout layouts/application.html.erb (Duration: 61.6ms | Allocations: 3045)
+Completed 200 OK in 66ms (Views: 63.0ms | Allocations: 3713)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:39:55 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c08e7e3d8fd6263b12c9
+Version: webpack 4.46.0
+Time: 7079ms
+Built at: 10/25/2021 9:40:07 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2719dbcae39cd13aee18.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-2719dbcae39cd13aee18.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2719dbcae39cd13aee18.js js/application-2719dbcae39cd13aee18.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 932 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 745 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 7 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.esm.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/tomshaw/projects-ruby/f1-game-season-tracker/node_modules/bootstrap/dist/js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.esm.js 60:0-41 2356:17-23 2375:21-40 4029:15-21 4164:23-42
+ @ ./app/javascript/packs/application.js
+
+  Rendered layouts/_topnav.html.erb (Duration: 9.7ms | Allocations: 80)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 12874.1ms | Allocations: 3900)
+Completed 200 OK in 12883ms (Views: 12879.6ms | Allocations: 4307)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:48:43 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 234)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: c08e7e3d8fd6263b12c9
+Version: webpack 4.46.0
+Time: 12316ms
+Built at: 10/25/2021 9:49:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2719dbcae39cd13aee18.js   1.33 MiB  application  [emitted] [immutable]  application
+js/application-2719dbcae39cd13aee18.js.map   1.46 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2719dbcae39cd13aee18.js js/application-2719dbcae39cd13aee18.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 932 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 745 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 7 hidden modules
+
+ERROR in ./node_modules/bootstrap/dist/js/bootstrap.esm.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/tomshaw/projects-ruby/f1-game-season-tracker/node_modules/bootstrap/dist/js'
+ @ ./node_modules/bootstrap/dist/js/bootstrap.esm.js 60:0-41 2356:17-23 2375:21-40 4029:15-21 4164:23-42
+ @ ./app/javascript/packs/application.js
+
+  Rendered layouts/_topnav.html.erb (Duration: 1.3ms | Allocations: 261)
+  Rendered layouts/_messages.html.erb (Duration: 1.1ms | Allocations: 316)
+  Rendered layout layouts/application.html.erb (Duration: 22423.2ms | Allocations: 5134)
+Completed 200 OK in 22521ms (Views: 22454.1ms | ActiveRecord: 0.0ms | Allocations: 8028)
+
+
+Started GET "/" for 127.0.0.1 at 2021-10-25 21:50:26 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 234)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/tomshaw/projects-ruby/f1-game-season-tracker/public/packs
+[Webpacker] Hash: fc3d8ce86380ff2ba0d2
+Version: webpack 4.46.0
+Time: 19584ms
+Built at: 10/25/2021 9:50:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c108b8bf127ef115837a.js   1.48 MiB  application  [emitted] [immutable]  application
+js/application-c108b8bf127ef115837a.js.map   1.55 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c108b8bf127ef115837a.js js/application-c108b8bf127ef115837a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 932 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 745 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 65 hidden modules
+
+  Rendered layouts/_topnav.html.erb (Duration: 1.4ms | Allocations: 261)
+  Rendered layouts/_messages.html.erb (Duration: 1.3ms | Allocations: 316)
+  Rendered layout layouts/application.html.erb (Duration: 22806.6ms | Allocations: 5219)
+Completed 200 OK in 22864ms (Views: 22818.3ms | ActiveRecord: 0.0ms | Allocations: 8113)
+
+
