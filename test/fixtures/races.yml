@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  track_id: 1
+  position: 1
+  driver: MyString
+  team: MyString
+  grid: 1
+  best: MyString
+  milliseconds: 1
+  time: MyString
+
+two:
+  track_id: 1
+  position: 1
+  driver: MyString
+  team: MyString
+  grid: 1
+  best: MyString
+  milliseconds: 1
+  time: MyString

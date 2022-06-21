@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+gem 'google_drive'
+
 # BEGIN Ansible Managed gems
 gem 'mailjet'
 gem 'devise'

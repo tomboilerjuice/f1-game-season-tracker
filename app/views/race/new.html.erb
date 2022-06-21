@@ -1,0 +1,26 @@
+<%= form_with(local: true, url: create_race_path, method: 'post') do |form| %>
+  <div class=form-group>
+    <div class="row">
+      <div id="form-selected-address-block" class="col">
+        <%= form.label 'Data:' %>
+        <%= form.text_area :data, class: "form-control",  rows: 8 %>
+      </div>
+    </div>
+    <div class="row">
+      <div id="form-manual-address-block" class="col">
+        <%= form.label 'Track:' %>
+        <%= form.select :track, options_for_select(@tracks), {prompt: 'Select Race'}, {class: "form-control", required: 'required'} %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <%= form.label 'Season Number:' %>
+        <%= form.text_field :season_number, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Submit', class: 'btn btn-primary mr-1' %>
+  </div>
+
+<% end %>

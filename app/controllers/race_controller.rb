@@ -7,16 +7,15 @@ class RaceController < ApplicationController
   end
 
   def new
-
+    @tracks = Track.all().pluck(:name)
   end
 
   def create
-    data = params[:race_details][:data]
-    name = params[:race_details][:name]
-    @results_array = data.split('
-
-                                ')
-
+    data = params[:data]
+    name = params[:track].downcase
+    season_id = params[:season_number]
+    track_id = Track.find_by(name: params[:track]).id
+    @results_array = data.split("\r\n\r\n")
     position_array = build_array('POS')
 
     drivers_array = build_array('DRIVER')
@@ -33,13 +32,36 @@ class RaceController < ApplicationController
 
     final = position_array.zip(drivers_array, team_array, grid_array, best_array, ms_array, time_array)
 
+    race_result = []
+
+    position_array.each_with_index do |position, id|
+      race_result[id] = {
+        :position => position,
+        :driver => drivers_array[id],
+        :team => team_array[id],
+        :grid => grid_array[id],
+        :best => best_array[id],
+        :milliseconds => ms_array[id],
+        :time => time_array[id],
+        :track_id => track_id,
+        :season_id => season_id
+      }
+    end
+
+    Race.create(race_result)
+
+    # binding.pry
+
+    file_path = "#{Rails.application.credentials.dig(:local_storage)}#{name}.csv"
+
     s=CSV.generate do |csv|
       csv << ["Position", "Driver", "Team", "Grid", "Best", "Milliseconds", "Time"]
       final.each do |x|
         csv << x
       end
     end
-    File.write("#{name}".csv', s)
+    File.write(file_path, s)
+
   end
 
   private
@@ -59,7 +81,7 @@ class RaceController < ApplicationController
       "P1" => "",
       "P2" => "",
       "Pedro De La Rosa" => "Pedro de la Rosa",
-      "Tm" => '™',
+      " Tm" => '™',
       'Hrt' => 'HRT'
     }
 
